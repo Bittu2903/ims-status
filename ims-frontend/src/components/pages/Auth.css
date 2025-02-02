@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.blue-bar {
+  background-color: #007bff;
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  flex: 1;
+  background-color: white;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f7f7f7;
+  padding: 0 20px;
+  position: relative;
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.slider-options {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-option {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.slider-option.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.slider-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #007bff;
+  transition: left 0.3s ease;
+  opacity: 0.5;
+}
+
+.form-container {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form button {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
